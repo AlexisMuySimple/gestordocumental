@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope&amp;display=swap">
     <link rel="stylesheet" id="main-css" href="assets/css/custom.css" media="all">
     <!-- FIN ESTILOS -->
-    <title>Mis propiedades - MuySimple.cl - Tus documentos legales sin moverte de tu casa</title>
+    <title>Ficha propiedad - MuySimple.cl - Tus documentos legales sin moverte de tu casa</title>
     <link rel="icon" href="assets/img/isotipo.png" sizes="32x32">
   </head>
   
@@ -956,7 +956,7 @@
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item" aria-current="page">Usuario</li>
-                    <li class="breadcrumb-item active" aria-current="page">Mis propiedades</li>
+                    <li class="breadcrumb-item active" aria-current="page">Mis documentos</li>
                   </ol>
                 </nav>
               </div>
@@ -964,32 +964,11 @@
 
             <div class="row mb-2 gap-md-4 gap-2">
               <div class="col-12 col-md">
-                <h2 class="text-black fw-bold">Mis propiedades <span class="text-bluems bg-babyblue spanblue fw-bold ms-2">Corredor</span></h2>
+                <h2 class="text-black fw-bold">Ficha de la propiedad <span class="badge text-greyms bg-grey">PMS-HT-9M-Q29I</span></h2>
+                
               </div>
+            </div>
             
-              <div class="col-12 col-md text-end d-flex justify-content-end">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                  <a href="ficha_propiedad_edit.html">
-                    <button class="btn text-white bg-bluems w-100" id="nextBtn" type="button">Crear nueva ficha de propiedad</button>
-                  </a>
-                </nav>
-              </div>
-            </div>
-            <div class="row mb-2 gap-md-4 gap-2 justify-content-end">
-              <div class="col-12 col-md-8">
-                <form class="d-flex">
-                  <input id="searchms" width="16px" class="form-control me-2" type="search" placeholder="Buscar plantillas de documentos" aria-label="Search">
-                  <button class="search btn text-white bg-bluems" type="submit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
-                    </svg>
-                  </button>
-                </form>
-                <svg class="text-black-50 chevleft" xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"></path>
-                </svg>
-              </div>
-            </div>
         </div>      
       </section>
       <!-- FIN HERO MIS DOCS -->
@@ -1001,81 +980,15 @@
               <div class="col-12 col-md">
                  <nav class="navbar navbar-expand-lg pb-0">
                     <div class="container-fluid flexmob gap-md-5 gap-2">
-                      
-                      <div id="filters-mobile" class="container p-0 pb-4">
-                        <div class="row position-relative">
-                          <div class="col-6 pe-1 position-relative">
-                            <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2 w-100" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">Estado
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-                            </svg></a>
-                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown" data-bs-popper="static">
-                              <li><a class="dropdown-item" href="#">Pendientes de pago</a></li>
-                              <li><a class="dropdown-item" href="#">Firmados</a></li>
-                              <li><a class="dropdown-item" href="#">Pendientes de firma</a></li>
-                              <li><a class="dropdown-item" href="#">Rechazados</a></li>
-                              <li><a class="dropdown-item" href="#">Borradores</a></li>
-                            </ul>
-                          </div>
-                          <div class="col-6 ps-1 pe-1 position-relative">
-                            <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fecha
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-                            </svg></a>
-                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
-                              <li><a class="dropdown-item" href="#">Hoy</a></li>
-                              <li><a class="dropdown-item" href="#">Ultimos 7 dias</a></li>
-                              <li><a class="dropdown-item" href="#">Ultimos 30 dias</a></li>
-                              <li><a class="dropdown-item" href="#">Este ano (2024)</a></li>
-                              <li><a class="dropdown-item" href="#">Ano pasaso (2023)</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="row mt-2 position-relative">
-                          <div class="col-6 pe-1 position-relative">
-                            <a class="nav-link dropdown-toggle border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-                            </svg></a>
-                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
-                              <li><a class="dropdown-item" href="#">Opcion 1</a></li>
-                              <li><a class="dropdown-item" href="#">Opcion 2</a></li>
-                            </ul>
-                          </div>
-                          <div class="col-6 ps-1 pe-1 position-relative">
-                            <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categoria
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-                            </svg></a>
-                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
-                              <li><a class="dropdown-item" href="#">Opcion 1</a></li>
-                              <li><a class="dropdown-item" href="#">Opcion 2</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="row mt-2 position-relative">
-                          <div class="col-6 pe-1 position-relative">
-                            <a class="nav-link dropdown-toggle border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo firma
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-                            </svg></a>
-                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
-                              <li><a class="dropdown-item" href="#">Opcion 1</a></li>
-                              <li><a class="dropdown-item" href="#">Opcion 2</a></li>
-                            </ul>
-                          </div>
-                          <div class="col-6 ps-1 pe-1 position-relative">
-                            <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Se. Nota...
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-                            </svg></a>
-                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
-                              <li><a class="dropdown-item" href="#">Opcion 1</a></li>
-                              <li><a class="dropdown-item" href="#">Opcion 2</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>         
+                      <!-- MENU TABLA -->
+                      <div class="" id="navbarfilters">
+                        <ul class="navbar-nav my-0 navbar-nav-scroll gap-2 gap-md-6">
+                          <li class="nav-item nav-item-filter active py-2 d-none d-md-block">
+                            <a class="nav-link text-bluems fw-bold" aria-current="page" href="ficha_propiedad.html">Ingresa los datos de la propiedad</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- FIN MENU TABLA -->
                     </div>
                  </nav>
               </div>
@@ -1087,79 +1000,249 @@
       <!-- TABLE MIS DOCS-->  
       <section id="table-misd">
         <div class="container pt-0 px-4 pb-4">
-            <div class="row mb-2 gap-md-4 gap-2 rounded p-0 p-md-2 pe-0 pt-md-3 pb-md-3 border" style="background-color:#fafafa">
-              <div class="col-12 col-md divover" style="overflow-y: scroll; height:25vw;">
-                <table id="example" class="table p-0 w-100" style="margin-top:-30px; margin-bottom:-20px;">
-                    <thead>
-                      <tr>
-                        <th class="text-start text-black-50">Tipo documento</th>
-                        <th class="text-start text-black-50">Nombre documento</th>
-                        <th class="text-start text-black-50">Dirección</th>
-                        <th class="text-start text-black-50">Cómuna</th>
-                        <th class="text-start text-black-50">Propietario</th>
-                        <th class="text-start text-black-50">Tipo operación</th>
-                        <th class="text-start text-black-50">Estado</th>
-                        <th class="text-start text-black-50">Valor (CLP/UF)</th>
-                        <th class="text-start text-black-50">Acciones</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="tdradiusleft">Contratos</td>
-                        <td class="">contrato2112224</td>
-                        <td class="pt-0 pb-0 pt-md-3 pb-md-3">Julio Cesar 2983</td>
-                        <td class="pt-0 pb-0 pt-md-3 pb-md-3">Providencia</td>
-                        <td class="pt-0 pb-0 pt-md-3 pb-md-3">Sergio Maturana</td>
-                        <td class="pt-0 pb-0 pt-md-3 pb-md-3 text-end"><span class="text-green bg-green spanblue fw-bold ms-2">Venta</span></td>
-                        <td class="pt-0 pb-0 pt-md-3 pb-md-3"><span class="text-yellow bg-yellow spanblue fw-bold ms-2">En proceso de venta</span></td>
-                        <td class="pt-0 pb-0 pt-md-3 pb-md-3 text-end">2.200 UF</td>
-                        <td class="tdradiusright tdnavbardots pt-0 pb-0 pt-md-3 pb-md-3 d-flex justify-content-center">
-                          <nav class="navbardots navbar navbar-expand-lg navbar-dark p-0">
-                            <div>
-                              <ul class="uluser uldots navbar-nav m-auto my-2 my-lg-0 navbar-nav-scroll gap-2 gap-md-4">
-                                <li class="dropdown">
-                                    <a class="text-bluems txt-13 dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <button type="button" class="btn btn-link btn-sm dots" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="custom-tooltip" data-bs-title="Lorem Ipsum">
-                                      <img src="assets/img/more.png">
-                                    </button>
-                                    </a>
-                                  <ul class="dropdown-menu p-2" aria-labelledby="navbarScrollingDropdown">
-                                    <li>
-                                      <a class="dropdown-item txt-12 text-black-50" href="ficha_propiedad.html">
-                                        <svg width="14px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                          <path fill-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5H5.625ZM7.5 15a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 7.5 15Zm.75 2.25a.75.75 0 0 0 0 1.5H12a.75.75 0 0 0 0-1.5H8.25Z" clip-rule="evenodd" />
-                                          <path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z" />
-                                        </svg>
-                                        Ver ficha
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item txt-12 text-black-50" href="#">
-                                        <svg width="14px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                          <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                                          <path fill-rule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z" clip-rule="evenodd" />
-                                        </svg>
-                                        Ver documentos asociados
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a class="dropdown-item txt-12 text-black-50" href="#">
-                                        <svg width="14px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                          <path fill-rule="evenodd" d="M12 2.25a.75.75 0 0 1 .75.75v11.69l3.22-3.22a.75.75 0 1 1 1.06 1.06l-4.5 4.5a.75.75 0 0 1-1.06 0l-4.5-4.5a.75.75 0 1 1 1.06-1.06l3.22 3.22V3a.75.75 0 0 1 .75-.75Zm-9 13.5a.75.75 0 0 1 .75.75v2.25a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V16.5a.75.75 0 0 1 1.5 0v2.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V16.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
-                                        </svg>
-                                        Compartir link publicación
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </div>
-                          </nav> 
-                        </td>
-                    </tr>
-                  </tbody>  
-                </table>
+            <div class="row mb-2 gap-md-4 gap-2 rounded p-0 p-md-2 pe-0 pt-md-3 pb-md-3 blueborder bg-babyblue">
+              <div class="col-md p-4 divover">
+
+                <h6 class="text-black fw-bold">Datos básicos</h6>
+                <div class="row p-3 ps-0">
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Tipo de propiedad</label>
+                      <select class="form-select rounded" aria-label="ejemplo">
+                        <option selected="">Seleccionar</option>
+                        <option value="1">A</option>
+                        <option value="2">B</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Estado</label>
+                      <select class="form-select rounded" aria-label="ejemplo">
+                        <option selected="">Seleccionar</option>
+                        <option value="1">A</option>
+                        <option value="2">B</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Dirección</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="Hernesto Helles 6565">
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-3 ps-0">
+                  <div class="col-12 col-md-6 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Comuna</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="San Bernardo">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Ciudad</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="Santiago">
+                    </div>
+                  </div>
+                </div>
+
+                <h6 class="text-black fw-bold mt-4">Propietario</h6>
+                <div class="row p-3 ps-0">
+                  <div class="col-12 col-md-6 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Nombre</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="Alfredo Ibarra">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">RUT</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="12.876.342-9">
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-3 ps-0">
+                  <div class="col-12 col-md-6 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Teláfono</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="97655563">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Email</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="alfredoibarramm@gmail.com">
+                    </div>
+                  </div>
+                </div>
+
+                <h6 class="text-black fw-bold mt-4">Operación</h6>
+                <div class="row p-3 ps-0">
+                  <div class="col-12 col-md-6 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Tipo de operación</label>
+                      <select class="form-select rounded" aria-label="ejemplo">
+                        <option selected="">Seleccionar</option>
+                        <option value="1">A</option>
+                        <option value="2">B</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Valor CLP/UF</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="2.200 UF">
+                    </div>
+                  </div>
+                </div>
+
+                <h6 class="text-black fw-bold mt-4">Otros datos</h6>
+                <div class="row p-3 ps-0">
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">ROL</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="ROL65TTU80">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Superficie total</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="300 Metros">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Superficie útil</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="130 Metros">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Dormitorios</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="4">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row p-3 ps-0">
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Baños</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="2">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Estacionamientos</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="1">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Bodegas</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="1">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Cantidad de pisos</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="2">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row p-3 ps-0">
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Orientacion</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="Norte">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Antiguedad</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="10">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Gastos comunes</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="$80.000">
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Características</label>
+                      <input type="text" id="typeText" class="form-control form-control-sm" value="No perros">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row p-3 ps-0">
+                  <div class="col-12 col-md-12 mb-2">
+                    <div class="form-outline">
+                      <label class="form-label text-black" for="typeText">Enlace publicación</label>
+                        <input type="text" id="typeText" class="form-control form-control-sm" value="Http://www.muysimple.cl/misdocumetos/mispropiedades/GTF45DED334W">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row pt-4">
+                  <div class="col">
+                    <a href="mis_propiedades.html">
+                      <button class="btn border link-primary border border-primary rounded-pill w-100" id="prevBtn" type="button">Volver</button>
+                    </a>
+                  </div>
+                  <div class="col">
+                    <a href="ficha_propiedad.html">
+                      <button class="btn text-white bg-bluems w-100" id="nextBtn" type="button">Guardar datos</button>
+                    </a>
+                  </div>
+                </div>
               </div>
+              
+
+              
+              <div class="col-md-3 order-last listado-img-propiedades">
+                <h6 class="text-black pt-4">Selecciona las imagenes de la propiedad</h6>
+                <div class="mb-3">
+                  <input class="form-control form-control-sm" id="formFileSm" type="file">
+                </div>
+                <img src="assets/img/casa-venta.jpg" class="img-fluid rounded mt-3">
+                <div class="text-end" style="margin: -60px 12px 30px 0;">
+                  <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button" style="background-color: #ffffff; padding: 8px 10px; border-radius: 50%;">
+                    <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
+                    </svg>
+                  </a>    
+                </div>
+                <img src="assets/img/casa-venta-0.jpg" class="img-fluid rounded">
+                <div class="text-end" style="margin: -60px 12px 30px 0;">
+                  <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button" style="background-color: #ffffff; padding: 8px 10px; border-radius: 50%;">
+                    <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
+                    </svg>
+                  </a>    
+                </div>
+                <img src="assets/img/casa-venta-1.jpg" class="img-fluid rounded">
+                <div class="text-end" style="margin: -60px 12px 30px 0;">
+                  <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button" style="background-color: #ffffff; padding: 8px 10px; border-radius: 50%;">
+                    <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
+                    </svg>
+                  </a>    
+                </div>
+                <img src="assets/img/casa-venta-2.jpg" class="img-fluid rounded">
+                <div class="text-end" style="margin: -60px 12px 30px 0;">
+                  <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button" style="background-color: #ffffff; padding: 8px 10px; border-radius: 50%;">
+                    <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                      <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
+                    </svg>
+                  </a>    
+                </div>
+              </div>
+
             </div>
         </div>
       </section>
