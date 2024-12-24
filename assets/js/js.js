@@ -82,6 +82,12 @@ $(document).ready( function(){
     }
   });
 
+  $('a[data-toggle="tooltip-img"]').tooltip({
+    animated: 'fade',
+    placement: 'right',
+    html: true
+  });
+
   $(function(){
     $('.datepicker').datepicker();
   });

@@ -970,7 +970,12 @@
               <div class="col-12 col-md text-end d-flex justify-content-end">
                 <nav class="navbar navbar-expand-lg navbar-dark">
                   <a href="ficha_propiedad_edit.html">
-                    <button class="btn text-white bg-bluems w-100" id="nextBtn" type="button">Crear nueva ficha de propiedad</button>
+                    <button class="btn text-white bg-bluems w-100" id="nextBtn" type="button">
+                      Nueva ficha de propiedad
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mx-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>
+                    </button>
                   </a>
                 </nav>
               </div>
@@ -1092,12 +1097,13 @@
                 <table id="example" class="table p-0 w-100" style="margin-top:-30px; margin-bottom:-20px;">
                     <thead>
                       <tr>
-                        <th class="text-start text-black-50">Tipo documento</th>
-                        <th class="text-start text-black-50">Nombre documento</th>
+                        <th class="text-start text-black-50">Tipo doc.</th>
+                        <th class="text-start text-black-50">Nombre doc.</th>
+                        <th class="text-start text-black-50">Nombre propiedad</th>
                         <th class="text-start text-black-50">Dirección</th>
                         <th class="text-start text-black-50">Cómuna</th>
                         <th class="text-start text-black-50">Propietario</th>
-                        <th class="text-start text-black-50">Tipo operación</th>
+                        <th class="text-start text-black-50">Operación</th>
                         <th class="text-start text-black-50">Estado</th>
                         <th class="text-start text-black-50">Valor (CLP/UF)</th>
                         <th class="text-start text-black-50">Acciones</th>
@@ -1106,10 +1112,11 @@
                     <tbody>
                       <tr>
                         <td class="tdradiusleft">Contratos</td>
-                        <td class="">contrato2112224</td>
-                        <td class="pt-0 pb-0 pt-md-3 pb-md-3">Julio Cesar 2983</td>
+                        <td class="pt-0 pb-0 pt-md-3 pb-md-3"><span class="acortatexto" title="contrato-ms-24122014.pdf">contrato-ms-24122014.pdf</span></td>
+                        <td class="pt-0 pb-0 pt-md-3 pb-md-3"><span class="acortatexto" title="arriendo-vitacura-13-pablo-m">arriendo-vitacura-13-pablo-m</span></td>
+                        <td class="pt-0 pb-0 pt-md-3 pb-md-3"><span class="acortatexto" title="Julio Cesar 2983">Julio Cesar 2983</span></td>
                         <td class="pt-0 pb-0 pt-md-3 pb-md-3">Providencia</td>
-                        <td class="pt-0 pb-0 pt-md-3 pb-md-3">Sergio Maturana</td>
+                        <td class="pt-0 pb-0 pt-md-3 pb-md-3"><span class="acortatexto" title="Sergio Maturana">Sergio Maturana</span></td>
                         <td class="pt-0 pb-0 pt-md-3 pb-md-3 text-end"><span class="text-green bg-green spanblue fw-bold ms-2">Venta</span></td>
                         <td class="pt-0 pb-0 pt-md-3 pb-md-3"><span class="text-yellow bg-yellow spanblue fw-bold ms-2">En proceso de venta</span></td>
                         <td class="pt-0 pb-0 pt-md-3 pb-md-3 text-end">2.200 UF</td>
