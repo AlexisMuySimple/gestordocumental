@@ -964,7 +964,7 @@
 
             <div class="row mb-2 gap-md-4 gap-2">
               <div class="col-12 col-md">
-                <h2 class="text-black fw-bold">Ficha de la propiedad <span class="badge text-greyms bg-grey">PMS-HT-9M-Q29I</span> <span class="badge text-green bg-green">Arrendada</span></h2>
+                <h2 class="text-black fw-bold">Ficha de la propiedad <span class="badge text-green bg-green">Arrendada</span></h2>
                 
               </div>
             </div>
@@ -1010,218 +1010,82 @@
               <div class="col-md p-4 divover">
 
                 <div class="row">
-                  <div class="col-12 col-md-4 border-end">
+                  <div class="col-12 col-md-3 border-end">
                     <ul class="nav nav-pills" id="pills-tab" role="tablist" style="font-size:14px;">
                       <li class="nav-item" role="asociados">
-                        <button class="nav-link active btn-label" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-orden-visita" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Orden de visita (11)</button>
+                        <button class="nav-link active btn-label" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-orden-venta" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Orden de venta (11)</button>
                       </li>
                       <li class="nav-item" role="asociados">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-promesa-compraventa" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Promesa de compraventa (2)</button>
+                        <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-orden-arriendo" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Orden de arriendo (11)</button>
                       </li>
                       <li class="nav-item" role="asociados">
-                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contrato-arriendo" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contrato de arriendo (0)</button>
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-informe-visita" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Informe de visita (2)</button>
+                      </li>
+                      <li class="nav-item" role="asociados">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-cierre-negocio" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Cierre de negocio (0)</button>
                       </li>
                       <li class="nav-item" role="asociados">
                         <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-inventario" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Inventario (2)</button>
                       </li>
                       <li class="nav-item" role="asociados">
-                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-acta" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Acta recepción/entrega (1)</button>
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-acta" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Acta entrega/recepción (1)</button>
                       </li>
                     </ul>
                   </div>
 
-                  <div class="col-12 col-md-8">
+                  <div class="col-12 col-md-9">
                     <div class="tab-content w-100" id="pills-tabContent">
-                      <div class="tab-pane fade show active" id="pills-orden-visita" role="tabpanel" aria-labelledby="pills-orden-visita">
+                      
+                      <div class="tab-pane fade show active" id="pills-orden-venta" role="tabpanel" aria-labelledby="pills-orden-venta">
                         <div class="col">
-                          <a href="orden-de-visita.html">
-                            <button class="btn btn-sm text-white bg-bluems w-100" id="crear" type="button">Crear orden de visita</button>
+                          <a href="pre-llenado.html">
+                            <button class="btn btn-sm text-white bg-bluems w-100" id="crear" type="button">Crear orden de venta</button>
                           </a>
                         </div>
                         <table class="table table-borderless">
                           <thead>
                             <tr>
                               <th scope="col">Documento</th>
-                              <th scope="col">Creación documento</th>
-                              <th scope="col">fecha de visita</th>
+                              <th scope="col">Creación doc.</th>
+                              <th scope="col" class="text-end">Pago</th>
+                              <th scope="col" class="text-end">Firma</th>
+                              <th scope="col" class="text-end">Fecha de visita</th>
                               <th scope="col">Acciones</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
                               <th>Visita 001</th>
-                              <td>17-12-2024 12:40</td>
-                              <td>28-12-2024</td>
-                              <td class="text-end">
-                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
+                              <td class="text-end">17-12-2024 12:40</td>
+                              <td>
+                                <span class="text-redms bg-redms spanblue fw-bold ms-2" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Pendiente pago  
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
                                   </svg>
-                                </a>
-                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
-                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
-                                  </svg>
-                                </a>    
+                                </span>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Enviar recordatorio de pago <svg width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                    <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"></path>
+                                    <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"></path>
+                                  </svg></a></li>
+                                </ul>
+                                <span class="text-green bg-green spanblue fw-bold ms-2" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Pagado</span> 
                               </td>
-                            </tr>
-                            <tr>
-                              <th>Visita 002</th>
-                              <td>17-12-2024 13:30</td>
-                              <td>29-12-2024</td>
-                              <td class="text-end">
-                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
+                              <td>
+                                <span class="text-redms bg-redms spanblue fw-bold ms-2" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Pendiente de firma  
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
                                   </svg>
-                                </a>
-                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
-                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
-                                  </svg>
-                                </a>    
+                                </span>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">Enviar recordatorio de firma <svg width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                    <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"></path>
+                                    <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"></path>
+                                  </svg></a></li>
+                                </ul>
+                                <span class="text-green bg-green spanblue fw-bold ms-2">Firmado</span>
                               </td>
-                            </tr>
-                            <tr>
-                              <th>Visita 003</th>
-                              <td>17-12-2024 16:40</td>
-                              <td>29-12-2024</td>
-                              <td class="text-end">
-                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
-                                  </svg>
-                                </a>
-                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
-                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
-                                  </svg>
-                                </a>    
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>Visita 004</th>
-                              <td>17-12-2024 17:30</td>
-                              <td>30-12-2024</td>
-                              <td class="text-end">
-                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
-                                  </svg>
-                                </a>
-                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
-                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
-                                  </svg>
-                                </a>    
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>Visita 005</th>
-                              <td>18-12-2024 11:00</td>
-                              <td>31-12-2024</td>
-                              <td class="text-end">
-                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
-                                  </svg>
-                                </a>
-                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
-                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
-                                  </svg>
-                                </a>    
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>Visita 006</th>
-                              <td>17-12-2024 12:40</td>
-                              <td>28-12-2024</td>
-                              <td class="text-end">
-                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
-                                  </svg>
-                                </a>
-                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
-                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
-                                  </svg>
-                                </a>    
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>Visita 007</th>
-                              <td>17-12-2024 13:30</td>
-                              <td>29-12-2024</td>
-                              <td class="text-end">
-                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
-                                  </svg>
-                                </a>
-                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
-                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
-                                  </svg>
-                                </a>    
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>Visita 008</th>
-                              <td>17-12-2024 16:40</td>
-                              <td>29-12-2024</td>
-                              <td class="text-end">
-                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
-                                  </svg>
-                                </a>
-                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
-                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
-                                  </svg>
-                                </a>    
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>Visita 009</th>
-                              <td>17-12-2024 17:30</td>
-                              <td>30-12-2024</td>
-                              <td class="text-end">
-                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
-                                  </svg>
-                                </a>
-                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
-                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
-                                  </svg>
-                                </a>    
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>Visita 010</th>
-                              <td>18-12-2024 11:00</td>
-                              <td>31-12-2024</td>
-                              <td class="text-end">
-                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
-                                  </svg>
-                                </a>
-                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
-                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
-                                  </svg>
-                                </a>    
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>Visita 011</th>
-                              <td>18-12-2024 11:00</td>
-                              <td>31-12-2024</td>
+                              <td class="text-end">28-12-2024</td>
                               <td class="text-end">
                                 <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -1238,10 +1102,50 @@
                           </tbody>
                         </table>
                       </div>
-                      <div class="tab-pane fade" id="pills-promesa-compraventa" role="tabpanel" aria-labelledby="pills-promesa-compraventa">
+
+                      <div class="tab-pane fade" id="pills-orden-arriendo" role="tabpanel" aria-labelledby="pills-orden-arriendo">
+                        <div class="col">
+                          <a href="pre-llenado.html">
+                            <button class="btn btn-sm text-white bg-bluems w-100" id="crear" type="button">Crear orden de arriendo</button>
+                          </a>
+                        </div>
+                        <table class="table table-borderless">
+                          <thead>
+                            <tr>
+                              <th scope="col">Documento</th>
+                              <th scope="col">Creación documento</th>
+                              <th scope="col">Estado</th>
+                              <th scope="col">fecha de visita</th>
+                              <th scope="col">Acciones</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>Visita 001</th>
+                              <td>17-12-2024 12:40</td>
+                              <td><span class="text-green bg-green spanblue fw-bold ms-2">Firmado</span></td>
+                              <td>28-12-2024</td>
+                              <td class="text-end">
+                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
+                                  </svg>
+                                </a>
+                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
+                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
+                                  </svg>
+                                </a>    
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="tab-pane fade" id="pills-informe-visita" role="tabpanel" aria-labelledby="pills-informe-visita">
                         <div class="col">
                           <a href="#">
-                            <button class="btn btn-sm text-white bg-bluems w-100" id="crear" type="button">Crear promesa de compraventa</button>
+                            <button class="btn btn-sm text-white bg-bluems w-100" id="crear" type="button">Crear informe de visita</button>
                           </a>
                         </div>
                         <table class="table table-borderless">
@@ -1342,13 +1246,14 @@
                           </tbody>
                         </table>
                       </div>
-                      <div class="tab-pane fade" id="pills-contrato-arriendo" role="tabpanel" aria-labelledby="pills-contrato-arriendo">
+
+                      <div class="tab-pane fade" id="pills-cierre-negocio" role="tabpanel" aria-labelledby="pills-cierre-negocio">
                         <div class="col-12 text-center align-content-center p-5">
                           <svg class="text-bluems align-self-middle" xmlns="http://www.w3.org/2000/svg" width="128px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
                           </svg>
-                          <h5 class="text-black">Ups, aun no has creado un contrato</h5>
-                          <p class="text-black-50 descpl">Presiona el botón "Crear contrato de arriendo"</p>
+                          <h5 class="text-black">Ups, aun no has creado un documento asociado</h5>
+                          <p class="text-black-50 descpl">Presiona el botón "Crear cierre de negocio"</p>
                         </div>
                         <div class="col pt-2">
                           <a href="#">
@@ -1373,77 +1278,9 @@
                           </thead>
                           <tbody>
                             <tr>
-                              <th>Inventario 001</th>
+                              <th>Cierre 001</th>
                               <td>17-12-2024 12:40</td>
                               <td>28-12-2024</td>
-                              <td class="text-end">
-                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
-                                  </svg>
-                                </a>
-                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
-                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
-                                  </svg>
-                                </a>    
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>Inventario 002</th>
-                              <td>17-12-2024 13:30</td>
-                              <td>29-12-2024</td>
-                              <td class="text-end">
-                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
-                                  </svg>
-                                </a>
-                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
-                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
-                                  </svg>
-                                </a>    
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>Inventario 003</th>
-                              <td>17-12-2024 16:40</td>
-                              <td>29-12-2024</td>
-                              <td class="text-end">
-                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
-                                  </svg>
-                                </a>
-                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
-                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
-                                  </svg>
-                                </a>    
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>Inventario 004</th>
-                              <td>17-12-2024 17:30</td>
-                              <td>30-12-2024</td>
-                              <td class="text-end">
-                                <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"></path>
-                                  </svg>
-                                </a>
-                                <a data-bs-toggle="modal" href="#modal-firmantesdel" role="button">
-                                  <svg id="svgtrash" xmlns="http://www.w3.org/2000/svg" width="16px" viewBox="0 0 24 24" fill="currentColor" class="size-6">
-                                    <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd"></path>
-                                  </svg>
-                                </a>    
-                              </td>
-                            </tr>
-                            <tr>
-                              <th>Inventario 004</th>
-                              <td>18-12-2024 11:00</td>
-                              <td>31-12-2024</td>
                               <td class="text-end">
                                 <a data-bs-toggle="modal" href="#modal-firmantesex" role="button" class="text-bluems">
                                   <svg xmlns="http://www.w3.org/2000/svg" width="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -1460,6 +1297,7 @@
                           </tbody>
                         </table>
                       </div>
+
                       <div class="tab-pane fade" id="pills-acta" role="tabpanel" aria-labelledby="pills-acta">
                         <div class="col">
                           <a href="#">
@@ -1576,13 +1414,6 @@
                   </div>
                 </div>
 
-              </div>
-
-              <div class="col-md-3 order-last listado-img-propiedades">
-                <img src="assets/img/casa-venta.jpg" class="img-fluid rounded">
-                <img src="assets/img/casa-venta-0.jpg" class="img-fluid rounded">
-                <img src="assets/img/casa-venta-1.jpg" class="img-fluid rounded">
-                <img src="assets/img/casa-venta-2.jpg" class="img-fluid rounded">
               </div>
 
             </div>

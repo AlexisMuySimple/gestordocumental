@@ -832,7 +832,7 @@
             </div>
             <div class="row mb-2 gap-md-4 gap-2">
               <div class="col-12 col-md">
-                <h2 class="text-black fw-bold">Orden de Visita</h2>
+                <h2 class="text-black fw-bold">Orden de Venta</h2>
               </div>
             </div>
         </div>    
@@ -854,31 +854,125 @@
                             <p class="text-black-50 descpl">Estos datos han sido cargados desde el documento que engloba a esta propiedad, modifica los campos que creas necesarios.</p>
                             <div class="row my-4">
                               <div class="col">
-                                  <div class="form-outline">
-                                      <label class="form-label text-black" for="typeText">Lorem Ipsum</label>
-                                      <input type="text" id="typeText" class="form-control form-control-sm" value="Dato pre-cargado">
-                                  </div>
+                                <div class="form-outline position-relative">
+                                  <label class="form-label text-black" for="typeText">Fecha de la visita</label>
+                                  <input type="text" id="datepicker" class="form-control form-control-sm datepicker rounded" placeholder="Selecciona la fecha de la visita">
+                                  <span class="position-absolute top-50 end-0 pe-3 pt-1">
+                                    <svg width="16px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"></path>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label text-black" for="typeText">Valor propiedad CLP/UF</label>
+                                    <input type="text" id="typeText" class="form-control form-control-sm" value="2.200 UF">
+                                </div>
                               </div>
                             </div>
                             <div class="row my-4">
                               <div class="col">
                                   <div class="form-outline">
-                                      <label class="form-label text-black" for="typeText">Lorem Ipsum</label>
-                                      <input type="text" id="typeText" class="form-control form-control-sm" value="Dato pre-cargado">
+                                      <label class="form-label text-black" for="typeText">Nombre completo</label>
+                                      <input type="text" id="typeText" class="form-control form-control-sm" placeholder="Agregar nombre completo">
                                   </div>
+                              </div>
+                              <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label text-black" for="typeText">RUT del interesado</label>
+                                    <input type="text" id="typeText" class="form-control form-control-sm" placeholder="Ingresar RUT del interesado">
+                                </div>
+                            </div>
+                            </div>
+                            <div class="row my-4">
+                              <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label text-black" for="typeText">Teféfono del interesado</label>
+                                    <input type="text" id="typeText" class="form-control form-control-sm" placeholder="Agregar teléfono del interesado">
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label text-black" for="typeText">Email del interesado</label>
+                                    <input type="text" id="typeText" class="form-control form-control-sm" placeholder="Agregar email del interesado">
+                                </div>
+                            </div>
+                            </div>
+                            <div class="row my-4">
+                              <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label text-black" for="typeText">Dirección</label>
+                                    <input type="text" id="typeText" class="form-control form-control-sm" value="Julio Beltran 1818">
+                                </div>  
                               </div>
                             </div>
                             <div class="row my-4">
                               <div class="col">
-                                  <div class="form-outline">
-                                      <label class="form-label text-black" for="typeText">Lorem Ipsum</label>
-                                      <input type="text" id="typeText" class="form-control form-control-sm" value="Dato pre-cargado">
+                                <div class="form-outline">
+                                  <label class="form-label text-black" for="typeText">Comuna</label>
+                                   <select id="addfirmantes-select" class="form-select form-select-sm rounded" aria-label="Default select example">
+                                      <option selected="">Seleccionar</option>
+                                      <option value="1">Comuna 1</option>
+                                      <option value="2">Comuna 2</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="form-outline">
+                                  <label class="form-label text-black" for="typeText">Ciudad</label>
+                                   <select id="addfirmantes-select" class="form-select form-select-sm rounded" aria-label="Default select example">
+                                      <option selected="">Seleccionar</option>
+                                      <option value="1">Ciudad 1</option>
+                                      <option value="2">Ciudad 2</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row my-4">
+                              <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label text-black" for="typeText">Nombre inmobiliaria</label>
+                                    <input type="text" id="typeText" class="form-control form-control-sm" value="Inmobiliaria Creando SPA">
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label text-black" for="typeText">Agente inmobiliario o corredor</label>
+                                    <input type="text" id="typeText" class="form-control form-control-sm" value="Juan Estebez">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row my-4">
+                              
+                              <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label text-black" for="typeText">Nombre completo del interesado</label>
+                                    <input type="text" id="typeText" class="form-control form-control-sm" value="...">
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="form-outline">
+                                    <label class="form-label text-black" for="typeText">RUT del interesado</label>
+                                    <input type="text" id="typeText" class="form-control form-control-sm" value="...">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row my-4">
+                              <div class="col-">
+                                <div class="form-outline">
+                                  <div class="form-check">
+                                    <input class="form-check-input border-primary" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-label form-check-label text-black" for="defaultCheck1">
+                                      He revisado los documentos no admisibles para la firma electronica en esta plataforma en el <a class="text-bluems" href="#">siguiente link</a>
+                                    </label>
                                   </div>
+                                </div>
                               </div>
                             </div>
                             <div class="row pt-4">
                               <div class="col">
-                                <a href="orden-de-visita.html">
+                                <a href="ficha_propiedad_documentos_asociados.html">
                                   <button class="btn text-bluems border link-primary border border-primary rounded-pill fw-bold m-1 w-100" id="prevBtn" type="button">Anterior</button>
                                 </a>
                               </div>
