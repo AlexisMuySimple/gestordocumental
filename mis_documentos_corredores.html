@@ -1031,13 +1031,201 @@
 
       <!-- FILTERS MIS DOCS -->  
       <section id="filters-misd">
-        <div class="container p-md-4 pb-md-0 pt-md-0 p-0">
-            <div class="row mb-0 gap-md-4 gap-2">
-              <div class="col-12 col-md">
+        <div class="container p-md-5 pb-md-0 pt-md-0 p-0">
+        <!--<div class="container p-md-4 pb-md-0 pt-md-0 p-0"></div>-->
+            <div class="row mb-0">
+              <!-- ESTO ES NUEVOOOOOOOOOOOOOO -->  
+              <nav class="navbar navbar-expand-md pb-0">
+              <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                  <div class="" id="navbarfilters">
+                    <ul class="navbar-nav my-0 navbar-nav-scroll gap-2 gap-md-6">
+                      <li class="nav-item filterms dropdown d-none d-md-block">
+                        <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Estado
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                        </svg></a>
+                        <div class="text-end">
+                          <div class="triangle-up" bis_skin_checked="1"></div>  
+                        </div>
+                        <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="#">Pendientes de pago</a></li>
+                          <li><a class="dropdown-item" href="#">Firmados</a></li>
+                          <li><a class="dropdown-item" href="#">Pendientes de firma</a></li>
+                          <li><a class="dropdown-item" href="#">Rechazados</a></li>
+                          <li><a class="dropdown-item" href="#">Borradores</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item filterms dropdown d-none d-md-block">
+                        <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fecha
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                        </svg></a>
+                        <div class="text-end">
+                          <div class="triangle-up" bis_skin_checked="1"></div>  
+                        </div>
+                        <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="#">Hoy</a></li>
+                          <li><a class="dropdown-item" href="#">Ultimos 7 dias</a></li>
+                          <li><a class="dropdown-item" href="#">Ultimos 30 dias</a></li>
+                          <li><a class="dropdown-item" href="#">Este ano (2024)</a></li>
+                          <li><a class="dropdown-item" href="#">Ano pasaso (2023)</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item filterms dropdown d-none d-md-block">
+                        <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                        </svg></a>
+                        <div class="text-end">
+                          <div class="triangle-up" bis_skin_checked="1"></div>  
+                        </div>
+                        <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="#">Declaración jurada</a></li>
+                          <li><a class="dropdown-item" href="#">Laborales</a></li>
+                          <li><a class="dropdown-item" href="#">Contratos</a></li>
+                          <li><a class="dropdown-item" href="#">Societarios (empresas)</a></li>
+                          <li><a class="dropdown-item" href="#">Poderes (Mandatos)</a></li>
+                          <li><a class="dropdown-item" href="#">Inmobiliario</a></li>
+                          <li><a class="dropdown-item" href="#">Otros documentos</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item filterms dropdown d-none d-md-block">
+                        <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categoria
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                        </svg></a>
+                        <div class="text-end">
+                          <div class="triangle-up" bis_skin_checked="1"></div>  
+                        </div>
+                        <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="#">Opcion 1</a></li>
+                          <li><a class="dropdown-item" href="#">Opcion 2</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item filterms dropdown d-none d-md-block">
+                        <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo firma
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                        </svg></a>
+                        <div class="text-end">
+                          <div class="triangle-up" bis_skin_checked="1"></div>  
+                        </div>
+                        <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="#">Firma simple</a></li>
+                          <li><a class="dropdown-item" href="#">Firma avanzada</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="" id="navbarfilters">
+                    <ul class="navbar-nav my-0 navbar-nav-scroll gap-2 gap-md-6">
+                      <li class="nav-item nav-item-filter active py-2 d-none d-md-block">
+                        <a class="nav-link text-bluems fw-bold" aria-current="page" href="#">Creados por mí <span>(10)</span></a>
+                      </li>
+                      <li class="nav-item nav-item-filter py-2 d-none d-md-block">
+                        <a class="nav-link text-black fw-bold" href="#">Firmados por mí <span class="text-black-50">(2)</span></a>
+                      </li>
+                      <li class="nav-item nav-item-filter py-2 d-none d-md-block">
+                        <a class="nav-link text-black fw-bold" href="#">Mis borradores <span class="text-black-50">(1)</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </nav>
+              <!-- ESTO ES NUEVOOOOOOOOOOOOOO HASTA ACAAAAAAAA -->  
+              <!--<div class="col-12 col-md">
                  <nav class="navbar navbar-expand-md pb-0">
+                  
                     <div class="container-fluid flexmob gap-md-5 gap-2">
-                    <!-- MENU TABLA -->
-                      <div class="col">
+                     MENU TABLA 
+                    <div class="col-12" style="background-color: green;">
+                      <div class="" id="navbarfilters">
+                        <ul class="navbar-nav my-0 navbar-nav-scroll gap-2 gap-md-6">
+                          <li class="nav-item filterms dropdown d-none d-md-block">
+                            <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Estado
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                            </svg></a>
+                            <div class="text-end">
+                              <div class="triangle-up" bis_skin_checked="1"></div>  
+                            </div>
+                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" href="#">Pendientes de pago</a></li>
+                              <li><a class="dropdown-item" href="#">Firmados</a></li>
+                              <li><a class="dropdown-item" href="#">Pendientes de firma</a></li>
+                              <li><a class="dropdown-item" href="#">Rechazados</a></li>
+                              <li><a class="dropdown-item" href="#">Borradores</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item filterms dropdown d-none d-md-block">
+                            <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fecha
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                            </svg></a>
+                            <div class="text-end">
+                              <div class="triangle-up" bis_skin_checked="1"></div>  
+                            </div>
+                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" href="#">Hoy</a></li>
+                              <li><a class="dropdown-item" href="#">Ultimos 7 dias</a></li>
+                              <li><a class="dropdown-item" href="#">Ultimos 30 dias</a></li>
+                              <li><a class="dropdown-item" href="#">Este ano (2024)</a></li>
+                              <li><a class="dropdown-item" href="#">Ano pasaso (2023)</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item filterms dropdown d-none d-md-block">
+                            <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                            </svg></a>
+                            <div class="text-end">
+                              <div class="triangle-up" bis_skin_checked="1"></div>  
+                            </div>
+                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" href="#">Declaración jurada</a></li>
+                              <li><a class="dropdown-item" href="#">Laborales</a></li>
+                              <li><a class="dropdown-item" href="#">Contratos</a></li>
+                              <li><a class="dropdown-item" href="#">Societarios (empresas)</a></li>
+                              <li><a class="dropdown-item" href="#">Poderes (Mandatos)</a></li>
+                              <li><a class="dropdown-item" href="#">Inmobiliario</a></li>
+                              <li><a class="dropdown-item" href="#">Otros documentos</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item filterms dropdown d-none d-md-block">
+                            <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categoria
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                            </svg></a>
+                            <div class="text-end">
+                              <div class="triangle-up" bis_skin_checked="1"></div>  
+                            </div>
+                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" href="#">Opcion 1</a></li>
+                              <li><a class="dropdown-item" href="#">Opcion 2</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item filterms dropdown d-none d-md-block">
+                            <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo firma
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                            </svg></a>
+                            <div class="text-end">
+                              <div class="triangle-up" bis_skin_checked="1"></div>  
+                            </div>
+                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" href="#">Firma simple</a></li>
+                              <li><a class="dropdown-item" href="#">Firma avanzada</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                      <div class="col" style="background-color: red;">
                         <div class="" id="navbarfilters">
                           <ul class="navbar-nav my-0 navbar-nav-scroll gap-2 gap-md-6">
                             <li class="nav-item nav-item-filter active py-2 d-none d-md-block">
@@ -1052,91 +1240,10 @@
                           </ul>
                         </div>
                       </div>
-                      <div class="col">
-                        <div class="" id="navbarfilters">
-                          <ul class="navbar-nav my-0 navbar-nav-scroll gap-2 gap-md-6">
-                            <li class="nav-item filterms dropdown d-none d-md-block">
-                              <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Estado
-                              <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-                              </svg></a>
-                              <div class="text-end">
-                                <div class="triangle-up" bis_skin_checked="1"></div>  
-                              </div>
-                              <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Pendientes de pago</a></li>
-                                <li><a class="dropdown-item" href="#">Firmados</a></li>
-                                <li><a class="dropdown-item" href="#">Pendientes de firma</a></li>
-                                <li><a class="dropdown-item" href="#">Rechazados</a></li>
-                                <li><a class="dropdown-item" href="#">Borradores</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav-item filterms dropdown d-none d-md-block">
-                              <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fecha
-                              <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-                              </svg></a>
-                              <div class="text-end">
-                                <div class="triangle-up" bis_skin_checked="1"></div>  
-                              </div>
-                              <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Hoy</a></li>
-                                <li><a class="dropdown-item" href="#">Ultimos 7 dias</a></li>
-                                <li><a class="dropdown-item" href="#">Ultimos 30 dias</a></li>
-                                <li><a class="dropdown-item" href="#">Este ano (2024)</a></li>
-                                <li><a class="dropdown-item" href="#">Ano pasaso (2023)</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav-item filterms dropdown d-none d-md-block">
-                              <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo
-                              <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-                              </svg></a>
-                              <div class="text-end">
-                                <div class="triangle-up" bis_skin_checked="1"></div>  
-                              </div>
-                              <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Declaración jurada</a></li>
-                                <li><a class="dropdown-item" href="#">Laborales</a></li>
-                                <li><a class="dropdown-item" href="#">Contratos</a></li>
-                                <li><a class="dropdown-item" href="#">Societarios (empresas)</a></li>
-                                <li><a class="dropdown-item" href="#">Poderes (Mandatos)</a></li>
-                                <li><a class="dropdown-item" href="#">Inmobiliario</a></li>
-                                <li><a class="dropdown-item" href="#">Otros documentos</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav-item filterms dropdown d-none d-md-block">
-                              <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categoria
-                              <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-                              </svg></a>
-                              <div class="text-end">
-                                <div class="triangle-up" bis_skin_checked="1"></div>  
-                              </div>
-                              <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Opcion 1</a></li>
-                                <li><a class="dropdown-item" href="#">Opcion 2</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav-item filterms dropdown d-none d-md-block">
-                              <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo firma
-                              <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
-                              </svg></a>
-                              <div class="text-end">
-                                <div class="triangle-up" bis_skin_checked="1"></div>  
-                              </div>
-                              <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Firma simple</a></li>
-                                <li><a class="dropdown-item" href="#">Firma avanzada</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
                       
                       
-                      <!-- FIN MENU TABLA -->
+                      
+                      FIN MENU TABLA
                       <div id="filters-mobile" class="container p-0 pb-4">
                         <div class="row position-relative">
                           <div class="col-6 pe-1 position-relative">
@@ -1214,7 +1321,7 @@
                     </div>
                  </nav>
               </div>
-            </div>
+            </div>-->
         </div>      
       </section>
       <!-- FIN FILTERS MIS DOCS -->
