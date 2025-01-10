@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope&amp;display=swap">
     <link rel="stylesheet" id="main-css" href="assets/css/custom.css" media="all">
     <!-- FIN ESTILOS -->
-    <title>Mis propiedades - MuySimple.cl - Tus documentos legales sin moverte de tu casa</title>
+    <title>Mis documentos - MuySimple.cl - Tus documentos legales sin moverte de tu casa</title>
     <link rel="icon" href="assets/img/isotipo.png" sizes="32x32">
   </head>
   
@@ -733,6 +733,26 @@
       </div>
       <!-- FIN MODAL CERRAR SESION -->
 
+      <!-- MODAL PREVISUALIZAR DOCUMENTO --> 
+      <div class="modal modal-md fade" id="modal-prevdocumento" aria-hidden="true" aria-labelledby="prevdocumentolabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close btn-sm" data-bs-dismiss="modal" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </button>
+                </div>
+                <div class="modal-body text-center">
+                  <iframe id="previsualizar-iframe" class="rounded border" src="https://docs.google.com/viewerng/viewer?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true" frameborder="0" height="495px" width="100%"></iframe>
+                  <button class="btn text-white bg-bluems m-2 w-75 mt-4" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN MODAL PREVISUALIZAR DOCUMENTO -->
+
       <!-- MODAL AVAL--> 
       <div class="modal fade" id="modal-aval" aria-hidden="true" aria-labelledby="avallabel" tabindex="-1">
           <div class="modal-dialog modal-dialog-centered">
@@ -956,7 +976,7 @@
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item" aria-current="page">Usuario</li>
-                    <li class="breadcrumb-item active" aria-current="page">Mis propiedades</li>
+                    <li class="breadcrumb-item active" aria-current="page">Mis documentos</li>
                   </ol>
                 </nav>
               </div>
@@ -964,19 +984,31 @@
 
             <div class="row mb-2 gap-md-4 gap-2">
               <div class="col-12 col-md">
-                <h2 class="text-black fw-bold">Mis propiedades <span class="text-bluems bg-babyblue spanblue fw-bold ms-2">Corredor</span></h2>
+                <h2 class="text-black fw-bold">Mis documentos <span class="text-bluems bg-babyblue spanblue fw-bold ms-2">Corredor</span></h2>
               </div>
             
               <div class="col-12 col-md text-end d-flex justify-content-end">
                 <nav class="navbar navbar-expand-lg navbar-dark">
-                  <a href="ficha_propiedad_edit.html">
-                    <button class="btn text-white bg-bluems w-100" id="nextBtn" type="button">
-                      Nueva ficha de propiedad
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mx-2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                      </svg>
-                    </button>
-                  </a>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="uluser ulnuevo navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll gap-2 gap-md-4">
+                      <li class="dropdown">
+                        <button id="userbtn" class="btn bg-bluems text-white dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Crear nuevo documento
+                          <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                          </svg>
+                        </button>
+                        <div class="text-end">
+                          <div class="triangle-up" bis_skin_checked="1"></div>  
+                        </div>
+                        <ul class="dropdown-menu p-2" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="#">Llenar plantilla</a></li>
+                          <li><a class="dropdown-item" href="#">Subir documento</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="ficha_propiedad.html">Nueva ficha de propiedad</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </nav>
               </div>
             </div>
@@ -1001,12 +1033,226 @@
 
       <!-- FILTERS MIS DOCS -->  
       <section id="filters-misd">
-        <div class="container p-md-4 pb-md-0 pt-md-0 p-0">
-            <div class="row mb-0 gap-md-4 gap-2">
-              <div class="col-12 col-md">
-                 <nav class="navbar navbar-expand-lg pb-0">
+        <div class="container p-md-5 pb-md-0 pt-md-0 p-0">
+            <div class="row mb-0">
+              <!-- FILTROS -->  
+              <nav class="navbar navbar-expand-md pb-0">
+              <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                  <div class="" id="navbarfilters">
+                    <ul class="navbar-nav my-0 navbar-nav-scroll gap-2 gap-md-6">
+                      <li class="nav-item filterms dropdown d-none d-md-block">
+                        <span class="btn bg-bluems text-white p-2 px-3" style="white-space: nowrap; height: 40px;">
+                          Filtro activo <span class="badge bg-dark" title="Eliminar selección">X</span>
+                        </span>
+                      </li>
+                      <li class="nav-item filterms dropdown d-none d-md-block">
+                        <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Estado
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                        </svg></a>
+                        <div class="text-end">
+                          <div class="triangle-up" bis_skin_checked="1"></div>  
+                        </div>
+                        <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="#">Pendientes de pago</a></li>
+                          <li><a class="dropdown-item" href="#">Firmados</a></li>
+                          <li><a class="dropdown-item" href="#">Pendientes de firma</a></li>
+                          <li><a class="dropdown-item" href="#">Rechazados</a></li>
+                          <li><a class="dropdown-item" href="#">Borradores</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item filterms dropdown d-none d-md-block">
+                        <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fecha
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                        </svg></a>
+                        <div class="text-end">
+                          <div class="triangle-up" bis_skin_checked="1"></div>  
+                        </div>
+                        <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="#">Hoy</a></li>
+                          <li><a class="dropdown-item" href="#">Ultimos 7 dias</a></li>
+                          <li><a class="dropdown-item" href="#">Ultimos 30 dias</a></li>
+                          <li><a class="dropdown-item" href="#">Este ano (2024)</a></li>
+                          <li><a class="dropdown-item" href="#">Ano pasaso (2023)</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item filterms dropdown d-none d-md-block">
+                        <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                        </svg></a>
+                        <div class="text-end">
+                          <div class="triangle-up" bis_skin_checked="1"></div>  
+                        </div>
+                        <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="#">Declaración jurada</a></li>
+                          <li><a class="dropdown-item" href="#">Laborales</a></li>
+                          <li><a class="dropdown-item" href="#">Contratos</a></li>
+                          <li><a class="dropdown-item" href="#">Societarios (empresas)</a></li>
+                          <li><a class="dropdown-item" href="#">Poderes (Mandatos)</a></li>
+                          <li><a class="dropdown-item" href="#">Inmobiliario</a></li>
+                          <li><a class="dropdown-item" href="#">Otros documentos</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item filterms dropdown d-none d-md-block">
+                        <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categoria
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                        </svg></a>
+                        <div class="text-end">
+                          <div class="triangle-up" bis_skin_checked="1"></div>  
+                        </div>
+                        <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="#">Opcion 1</a></li>
+                          <li><a class="dropdown-item" href="#">Opcion 2</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item filterms dropdown d-none d-md-block">
+                        <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo firma
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                        </svg></a>
+                        <div class="text-end">
+                          <div class="triangle-up" bis_skin_checked="1"></div>  
+                        </div>
+                        <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                          <li><a class="dropdown-item" href="#">Firma simple</a></li>
+                          <li><a class="dropdown-item" href="#">Firma avanzada</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="pt-2" id="navbarfilters">
+                    <ul class="navbar-nav my-0 navbar-nav-scroll gap-2 gap-md-6">
+                      <li class="nav-item nav-item-filter py-2 d-none d-md-block">
+                        <a class="nav-link text-black fw-bold" href="mis_documentos_corredores.html">Creados por mí <span>(10)</span></a>
+                      </li>
+                      <li class="nav-item nav-item-filter py-2 d-none d-md-block">
+                        <a class="nav-link text-black fw-bold" href="#">Firmados por mí <span class="text-black-50">(2)</span></a>
+                      </li>
+                      <li class="nav-item nav-item-filter py-2 d-none d-md-block">
+                        <a class="nav-link text-black fw-bold" href="#">Mis borradores <span class="text-black-50">(1)</span></a>
+                      </li>
+                      <li class="nav-item nav-item-filter active py-2 d-none d-md-block">
+                        <a class="nav-link text-bluems fw-bold" aria-current="page" href="mis_propiedades.html">Mis propiedades <span class="text-black-50">(10)</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </nav>
+              <!-- ESTO ES NUEVOOOOOOOOOOOOOO HASTA ACAAAAAAAA -->  
+              <!--<div class="col-12 col-md">
+                 <nav class="navbar navbar-expand-md pb-0">
+                  
                     <div class="container-fluid flexmob gap-md-5 gap-2">
+                     MENU TABLA 
+                    <div class="col-12" style="background-color: green;">
+                      <div class="" id="navbarfilters">
+                        <ul class="navbar-nav my-0 navbar-nav-scroll gap-2 gap-md-6">
+                          <li class="nav-item filterms dropdown d-none d-md-block">
+                            <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Estado
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                            </svg></a>
+                            <div class="text-end">
+                              <div class="triangle-up" bis_skin_checked="1"></div>  
+                            </div>
+                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" href="#">Pendientes de pago</a></li>
+                              <li><a class="dropdown-item" href="#">Firmados</a></li>
+                              <li><a class="dropdown-item" href="#">Pendientes de firma</a></li>
+                              <li><a class="dropdown-item" href="#">Rechazados</a></li>
+                              <li><a class="dropdown-item" href="#">Borradores</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item filterms dropdown d-none d-md-block">
+                            <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Fecha
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                            </svg></a>
+                            <div class="text-end">
+                              <div class="triangle-up" bis_skin_checked="1"></div>  
+                            </div>
+                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" href="#">Hoy</a></li>
+                              <li><a class="dropdown-item" href="#">Ultimos 7 dias</a></li>
+                              <li><a class="dropdown-item" href="#">Ultimos 30 dias</a></li>
+                              <li><a class="dropdown-item" href="#">Este ano (2024)</a></li>
+                              <li><a class="dropdown-item" href="#">Ano pasaso (2023)</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item filterms dropdown d-none d-md-block">
+                            <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                            </svg></a>
+                            <div class="text-end">
+                              <div class="triangle-up" bis_skin_checked="1"></div>  
+                            </div>
+                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" href="#">Declaración jurada</a></li>
+                              <li><a class="dropdown-item" href="#">Laborales</a></li>
+                              <li><a class="dropdown-item" href="#">Contratos</a></li>
+                              <li><a class="dropdown-item" href="#">Societarios (empresas)</a></li>
+                              <li><a class="dropdown-item" href="#">Poderes (Mandatos)</a></li>
+                              <li><a class="dropdown-item" href="#">Inmobiliario</a></li>
+                              <li><a class="dropdown-item" href="#">Otros documentos</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item filterms dropdown d-none d-md-block">
+                            <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categoria
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                            </svg></a>
+                            <div class="text-end">
+                              <div class="triangle-up" bis_skin_checked="1"></div>  
+                            </div>
+                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" href="#">Opcion 1</a></li>
+                              <li><a class="dropdown-item" href="#">Opcion 2</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item filterms dropdown d-none d-md-block">
+                            <a class="nav-link dropdown-toggle me-1 border rounded-pill px-4 py-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tipo firma
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black-50 size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path>
+                            </svg></a>
+                            <div class="text-end">
+                              <div class="triangle-up" bis_skin_checked="1"></div>  
+                            </div>
+                            <ul class="ulfilter dropdown-menu p-1 pt-2" aria-labelledby="navbarScrollingDropdown">
+                              <li><a class="dropdown-item" href="#">Firma simple</a></li>
+                              <li><a class="dropdown-item" href="#">Firma avanzada</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                      <div class="col" style="background-color: red;">
+                        <div class="" id="navbarfilters">
+                          <ul class="navbar-nav my-0 navbar-nav-scroll gap-2 gap-md-6">
+                            <li class="nav-item nav-item-filter active py-2 d-none d-md-block">
+                              <a class="nav-link text-bluems fw-bold" aria-current="page" href="#">Creados por mí <span>(10)</span></a>
+                            </li>
+                            <li class="nav-item nav-item-filter py-2 d-none d-md-block">
+                              <a class="nav-link text-black fw-bold" href="#">Firmados por mí <span class="text-black-50">(2)</span></a>
+                            </li>
+                            <li class="nav-item nav-item-filter py-2 d-none d-md-block">
+                              <a class="nav-link text-black fw-bold" href="#">Mis borradores <span class="text-black-50">(1)</span></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                       
+                      
+                      
+                      FIN MENU TABLA
                       <div id="filters-mobile" class="container p-0 pb-4">
                         <div class="row position-relative">
                           <div class="col-6 pe-1 position-relative">
@@ -1084,7 +1330,7 @@
                     </div>
                  </nav>
               </div>
-            </div>
+            </div>-->
         </div>      
       </section>
       <!-- FIN FILTERS MIS DOCS -->
@@ -1334,6 +1580,11 @@
                     </tr>
                 </tbody>  
               </table>
+
+              <div class="text-end py-3">
+                <button id="userbtn" class="btn bg-bluems text-white dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Generar dashboard</button>
+              </div>
+                
               </div>
             </div>
         </div>
@@ -1342,67 +1593,184 @@
       
     </main>
     <!-- FIN MAIN -->
-    
-    <!-- VENTAS CRUZADAS -->
-    <section id="ventascruzadas" class="pt-md-4 pb-md-4 p-3">
-      <div class="container px-4">
-        <div class="row mb-5 gap-md-4 gap-2">
+
+    <!-- CARRUSEL SLIDE -->
+    <section class="p-4">
+      <div class="container pb-4">
+        
+        <div class="row mb-3">
           <div class="col-12 col-md order-first">
-            <h2 class="text-black fw-bold">Documentos asociados</h2>
+            <h2 class="text-black fw-bold">Documentos más requeridos</h2>
           </div>
-          <div class="col-12 col-md text-md-end text-center order-last order-md-0">
-            <button class="btn link-primary border border-primary rounded-pill" type="button">Ver todos los documentos</button>
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators" style="bottom: -40px;">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           </div>
-          <div class="col-12 order-0 order-md-last">
-            <div class="row gap-3">
-              <div class="col-12 col-md border rounded blueborder novms-det p-0">
-                <div class="maskms bg-novms p-5 h-100 rounded">
-                  <h4 class="text-white fw-bold mb-3 mt-3">Cierre de negocio</h4>
-                  <p class="text-white">Este documento te sirve para lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla lorem, consequat vel lacus at.</p>
-                  <button class="btn btn-primary-ms bg-white text-bluems rounded-pill text-end" type="button">
-                    <span class="btn-label pe-2">Ver documento</span>
-                    <span class="btn-arrow bg-bluems text-white">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
-                      </svg>
-                    </span>
-                  </button>
+          
+          <div class="carousel-inner"><!--The Carousel Container-->
+
+            <div class="carousel-item carousel-item-1 active">
+              <div class="row g-3">
+                <div class="col-xs-12 col-md-3">
+                  <div class="border rounded blueborder novms-det">
+                    <div class="maskms bg-novms p-5 h-100 rounded">
+                      <h4 class="text-white fw-bold mb-3 mt-3">Orden de venta</h4>
+                      <p class="text-white">Este documento te sirve para lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla lorem, consequat vel lacus at.</p>
+                      <button class="btn btn-primary-ms bg-white text-bluems rounded-pill text-end" type="button">
+                        <span class="btn-label pe-2">Ver documento</span>
+                        <span class="btn-arrow bg-bluems text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-xs-12 col-md-3">
+                  <div class="border rounded blueborder novms-det">
+                    <div class="maskms bg-novms p-5 h-100 rounded">
+                      <h4 class="text-white fw-bold mb-3 mt-3">Orden de arriendo</h4>
+                      <p class="text-white">Este documento te sirve para lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla lorem, consequat vel lacus at.</p>
+                      <button class="btn btn-primary-ms bg-white text-bluems rounded-pill text-end" type="button">
+                        <span class="btn-label pe-2">Ver documento</span>
+                        <span class="btn-arrow bg-bluems text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-xs-12 col-md-3">
+                  <div class="border rounded blueborder novms-det">
+                    <div class="maskms bg-novms p-5 h-100 rounded">
+                      <h4 class="text-white fw-bold mb-3 mt-3">Informe de visita</h4>
+                      <p class="text-white">Este documento te sirve para lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla lorem, consequat vel lacus at.</p>
+                      <button class="btn btn-primary-ms bg-white text-bluems rounded-pill text-end" type="button">
+                        <span class="btn-label pe-2">Ver documento</span>
+                        <span class="btn-arrow bg-bluems text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-md-3">
+                  <div class="border rounded blueborder novms-det">
+                    <div class="maskms bg-novms p-5 h-100 rounded">
+                      <h4 class="text-white fw-bold mb-3 mt-3">Cierre de negocio</h4>
+                      <p class="text-white">Este documento te sirve para lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla lorem, consequat vel lacus at.</p>
+                      <button class="btn btn-primary-ms bg-white text-bluems rounded-pill text-end" type="button">
+                        <span class="btn-label pe-2">Ver documento</span>
+                        <span class="btn-arrow bg-bluems text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-12 col-md border rounded blueborder novms-det novms-det-2 p-0">
-                <div class="maskms bg-novms p-5 h-100 rounded">
-                  <h4 class="text-white fw-bold mb-3 mt-3">Inventario</h4>
-                  <p class="text-white">Este documento te sirve para lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla lorem, consequat vel lacus at.</p>
-                  <button class="btn btn-primary-ms bg-white text-bluems rounded-pill text-end" type="button">
-                    <span class="btn-label pe-2">Ver documento</span>
-                    <span class="btn-arrow bg-bluems text-white">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
-                      </svg>
-                    </span>
-                  </button>
+            </div><!--[FIN Carousel Item 1]-->
+
+            <div class="carousel-item carousel-item-2">
+              <div class="row g-3">
+                <div class="col-xs-12 col-md-3">
+                  <div class="border rounded blueborder novms-det">
+                    <div class="maskms bg-novms p-5 h-100 rounded">
+                      <h4 class="text-white fw-bold mb-3 mt-3">Orden de venta</h4>
+                      <p class="text-white">Este documento te sirve para lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla lorem, consequat vel lacus at.</p>
+                      <button class="btn btn-primary-ms bg-white text-bluems rounded-pill text-end" type="button">
+                        <span class="btn-label pe-2">Ver documento</span>
+                        <span class="btn-arrow bg-bluems text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-xs-12 col-md-3">
+                  <div class="border rounded blueborder novms-det">
+                    <div class="maskms bg-novms p-5 h-100 rounded">
+                      <h4 class="text-white fw-bold mb-3 mt-3">Orden de arriendo</h4>
+                      <p class="text-white">Este documento te sirve para lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla lorem, consequat vel lacus at.</p>
+                      <button class="btn btn-primary-ms bg-white text-bluems rounded-pill text-end" type="button">
+                        <span class="btn-label pe-2">Ver documento</span>
+                        <span class="btn-arrow bg-bluems text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-xs-12 col-md-3">
+                  <div class="border rounded blueborder novms-det">
+                    <div class="maskms bg-novms p-5 h-100 rounded">
+                      <h4 class="text-white fw-bold mb-3 mt-3">Informe de visita</h4>
+                      <p class="text-white">Este documento te sirve para lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla lorem, consequat vel lacus at.</p>
+                      <button class="btn btn-primary-ms bg-white text-bluems rounded-pill text-end" type="button">
+                        <span class="btn-label pe-2">Ver documento</span>
+                        <span class="btn-arrow bg-bluems text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xs-12 col-md-3">
+                  <div class="border rounded blueborder novms-det">
+                    <div class="maskms bg-novms p-5 h-100 rounded">
+                      <h4 class="text-white fw-bold mb-3 mt-3">Cierre de negocio</h4>
+                      <p class="text-white">Este documento te sirve para lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla lorem, consequat vel lacus at.</p>
+                      <button class="btn btn-primary-ms bg-white text-bluems rounded-pill text-end" type="button">
+                        <span class="btn-label pe-2">Ver documento</span>
+                        <span class="btn-arrow bg-bluems text-white">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-12 col-md border rounded blueborder novms-det p-0">
-                <div class="maskms bg-novms p-5 h-100 rounded">
-                  <h4 class="text-white fw-bold mb-3 mt-3">Informe de visita</h4>
-                  <p class="text-white">Este documento te sirve para lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla lorem, consequat vel lacus at.</p>
-                  <button class="btn btn-primary-ms bg-white text-bluems rounded-pill text-end" type="button">
-                    <span class="btn-label pe-2">Ver documento</span>
-                    <span class="btn-arrow bg-bluems text-white">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
-                      </svg>
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </div>  
-          </div>
+            </div><!--[FIN Carousel Item 2]-->
+        </div><!--[End of Container]-->
+
+        <div class="control-btn">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
         </div>
       </div>
     </section>
-    <!-- FIN VENTAS CRUZADAS -->
 
     <!-- PIE DE PAGINA -->
     <footer>
